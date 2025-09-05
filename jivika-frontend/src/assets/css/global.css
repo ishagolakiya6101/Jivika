@@ -1,0 +1,356 @@
+/* src/assets/css/global.css */
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+Gujarati:wdth,wght@62.5..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    overflow-x: hidden;
+    background-color:#F7F7F7;
+}
+
+.page-title {
+    font-family: "Bonheur Royale", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 5em;
+}
+.page-title-section {
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the overlay color and opacity as needed */
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    padding-top: 200px; /* Adjust the top padding to center the text vertically */
+  }
+  .profile-card {
+    border-radius: 16px;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  @media (max-width: 991px) {
+    .profile-card {
+      max-width: 100%;
+    }
+  }
+  .profile-header {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+  .profile-image {
+    width: 36px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+  }
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .profile-name {
+    color: var(--blue, #0075ff);
+    font-weight: 700;
+    font-family: DM Sans, sans-serif;
+    font-size: 18px;
+  }
+  .distance {
+    color: #656565;
+    font-family: DM Sans, sans-serif;
+    font-size: 12px;
+  }
+  .expertise-container {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 14px;
+    color: #656565;
+    font-weight: 500;
+  }
+  @media (max-width: 991px) {
+    .expertise-container {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  .expertise-item {
+    display: flex;
+    gap: 4px;
+  }
+  .expertise {
+    flex-grow: 1;
+    font-family: DM Sans, sans-serif;
+  }
+  .profile-address {
+    margin-top: 8px;
+    font-family: DM Sans, sans-serif;
+    font-size: 14px;
+    color: #656565;
+  }
+
+.content-wrapper { background-color: #f6f5fb; display: flex; flex-direction: column; padding: 49px 80px 21px; margin-top: 95px; }
+.header .brand-name { color: #0075ff; font: 500 40px/120% 'Be Vietnam Pro', sans-serif; }
+.header .brand-description { color: #9795b5; font: 400 18px/30px 'DM Sans', sans-serif; margin-top: 39px; }
+.image-gallery { display: flex; gap: 16px; margin-top: 40px; padding-right: 80px; }
+.gallery-image { aspect-ratio: 1; object-fit: cover; width: 36px; }
+.services-menu, .quick-links { display: flex; flex-direction: column; }
+.menu-title, .quick-links-title { color: #0075ff; font-size: 20px; }
+.services-menu ul, .quick-links ul { list-style: none; padding: 0; }
+.visit-address, .social-media-links { display: flex; flex-direction: column; }
+.address-title { color: #0075ff; font-size: 20px; }
+.address-map, .social-media-icon { width: 100%; margin-top: 25px; aspect-ratio: 1.43; object-fit: cover; }
+.footer { display: flex; flex-direction: column; align-items: center; margin-top: 81px; text-align: center; }
+.footer a { text-decoration: underline; color: #adabc3; font-family: 'DM Sans', sans-serif; }
+
+.header {
+    background-color: rgba(0, 0, 0, 0.14);
+    justify-content: space-between;
+    display: flex;
+    gap :20px;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    z-index: 9999999999999;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding :0 50px;
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+.logo-container, .auth-options {
+  min-width: 250px;
+}
+.brand-name {
+  color: #fff;
+  margin: 15px 0;
+  font: 500 40px/120% "Be Vietnam Pro", -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  max-width: 80%;
+}
+
+.nav-links {
+  padding-left: 0;
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: auto 0;
+}
+
+.nav-item {
+  color: #fff;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.auth-options {
+  margin: 15px 0;
+}
+
+.register-button, .login-button {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 700;
+  background-color: var(--blue, #0075ff);
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.register-button {
+  background-color: transparent;
+  box-shadow: none;
+}
+.basic-button {
+  padding: 0 20px;
+  color: rgb(253, 253, 253);
+  background-color: transparent;
+  font-weight: 700;
+  border-color:var(--blue, #0075ff);
+  padding: 15px 40px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+@media (max-width: 991px) {
+  .login-button, .register-button {
+    padding: 0 20px;
+  }
+}
+
+.service-filter {
+    display: flex;
+}
+.service-list {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    height: 600px;
+    overflow-x: hidden;
+    padding-left:0;
+    padding-right: 10px;
+}
+.service-list .card {
+    border-radius: 8px;
+    background-color: #fbfbfb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2px;
+    border: none;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 1px 3px 4px #ccc;
+  }
+  
+  .service-list .card-header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .service-list .card-header {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .service-list .card-content {
+    align-self: start;
+    display: flex;
+    padding: 0.5rem 1rem;
+    flex-direction: column;
+  }
+  
+  .service-list .title {
+    color: var(--blue, #0075ff);
+    text-align: center;
+    font-feature-settings: "clig" off, "liga" off;
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  .service-list .freelancer-info {
+    display: flex;
+    /* margin-top: 10px; */
+    justify-content: space-between;
+    gap: 4px;
+    font-size: 14px;
+    color: #656565;
+    line-height: 143%;
+  }
+  
+  .service-list .status-indicator {
+    background-color: #37bc21;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: auto 0;
+  }
+  
+  .service-list .freelancer-count {
+    flex-grow: 1;
+    flex-basis: auto;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  
+  .service-list .photo-preview {
+    aspect-ratio: 3.23;
+    object-fit: auto;
+    object-position: center;
+    width: 116px;
+    margin-top: 10px;
+    max-width: 100%;
+  }
+  
+  .service-list .profile-picture {
+    aspect-ratio: 0.99;
+    object-position: right;
+    position: absolute;
+    right: 10px;
+    width: 90px;
+    top: 15px;
+    object-position: center;
+  }
+  .footer {
+    background-color: #F6F5FB;
+    padding-top: 2rem;
+  }
+  .footer p, .footer li, .footer a { 
+    color: #9D9D9D;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 600;;
+  }
+  .footer h5 { 
+    color: #0075FF;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  .text-left {
+    text-align: left;
+  }
+    .footer .social-media a i {
+        font-size: 18px;
+        padding: 9px;
+        background-color: #8D8BA715;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .footer .social-media  {
+        text-align: left;
+    }
+.card {
+    background-color: #b8afafc0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 2px;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+  }

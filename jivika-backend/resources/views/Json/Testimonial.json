@@ -1,0 +1,28 @@
+{
+    "fields":[
+        {
+            "name":"name",
+            "type":"string",
+            "html_type":"text",
+            "rules":"required"
+        },
+        {
+            "name":"title",
+            "type":"string",
+            "html_type":"text",
+            "rules":"required"
+        },
+        {
+            "name":"words",
+            "type":"text",
+            "html_type":"textarea",
+            "rules":"required"
+        },
+        {
+            "name":"author_image",
+            "type":"string",
+            "html_type":"file",
+            "rules":"required"
+        }
+    ]
+}
